@@ -7,6 +7,7 @@ def test_login(browser_context_with_trace)-> None:
     page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
 
     # Interact with login form
+
     page.get_by_label("Email Address / Username").fill("Admin")
     page.get_by_label("Password", exact=True).fill("admin123")
     page.get_by_role("button", name="Login").click()
